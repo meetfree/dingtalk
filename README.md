@@ -31,6 +31,7 @@ composer require meetfree/dingtalk
 use EasyDingTalk\Application;
 
 $config = [
+    // 回调时填 app key
     'corp_id' => 'dingd3ir8195906jfo93',
 
     'app_key' => 'dingwu33fo1fjc0fszad',
