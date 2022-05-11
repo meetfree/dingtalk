@@ -29,6 +29,18 @@ class Client extends BaseClient
     }
 
     /**
+     * 获取用户详情 V2
+     *
+     * @param $userid
+     * @param $lang
+     * @return mixed
+     */
+    public function getUserById($userid, $lang = null)
+    {
+        return $this->client->post('topapi/v2/user/get', compact('userid', 'lang'));
+    }
+
+    /**
      * 获取部门用户 Userid 列表
      *
      * @param int $departmentId
