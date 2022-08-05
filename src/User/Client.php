@@ -156,7 +156,7 @@ class Client extends BaseClient
      */
     public function delete($userid)
     {
-        return $this->client->get('topapi/v2/user/delete', compact('userid'));
+        return $this->client->post('topapi/v2/user/delete', compact('userid'));
     }
 
     /**
