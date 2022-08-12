@@ -131,7 +131,7 @@ class Client extends BaseClient
      */
     public function create(array $params)
     {
-        return $this->client->postJson('topapi/v2/user/create', $params);
+        return $this->client->post('topapi/v2/user/create', $params);
     }
 
     /**
