@@ -15,6 +15,11 @@ use EasyDingTalk\Kernel\BaseClient;
 
 class Client extends BaseClient
 {
+    public function sendMessage($data) 
+    {
+        return $this->client->request('topapi/message/corpconversation/asyncsend_v2', 'POST', $data);
+    }
+    
     /**
      * 获取用户详情
      *
